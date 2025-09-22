@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Librería & Biblioteca</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="logo">📚 Mi Librería & Biblioteca</h1>
+    <nav aria-label="Menú principal">
+      <ul class="nav-list">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#tienda">Tienda</a></li>
+        <li><a href="#biblioteca">Biblioteca</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="inicio" class="hero">
+      <h2>Bienvenido a tu espacio de lectura</h2>
+      <p>Aquí encontrarás libros para comprar y una biblioteca digital gratuita.</p>
+      <a class="cta" href="#tienda">Explorar libros</a>
+    </section>
+
+    <!-- Tienda -->
+    <section id="tienda" class="container">
+      <h3>🛒 Tienda de Libros</h3>
+      <div class="grid">
+        <article class="card">
+          <h4>El Principito</h4>
+          <p>Autor: Antoine de Saint-Exupéry</p>
+          <button class="btn">Comprar</button>
+        </article>
+        <article class="card">
+          <h4>Cien Años de Soledad</h4>
+          <p>Autor: Gabriel García Márquez</p>
+          <button class="btn">Comprar</button>
+        </article>
+        <article class="card">
+          <h4>1984</h4>
+          <p>Autor: George Orwell</p>
+          <button class="btn">Comprar</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- Biblioteca -->
+    <section id="biblioteca" class="container">
+      <h3>📖 Biblioteca Digital</h3>
+      <div class="grid">
+        <article class="card">
+          <h4>Orgullo y Prejuicio</h4>
+          <p>Autor: Jane Austen</p>
+          <a href="#" class="btn">Leer Online</a>
+        </article>
+        <article class="card">
+          <h4>Don Quijote de la Mancha</h4>
+          <p>Autor: Miguel de Cervantes</p>
+          <a href="#" class="btn">Descargar</a>
+        </article>
+        <article class="card">
+          <h4>La Odisea</h4>
+          <p>Autor: Homero</p>
+          <a href="#" class="btn">Leer Online</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="container">
+      <h3>📩 Contacto</h3>
+      <p>Correo: 
+        <a href="mailto:cristiansantiagoperezcruz@gmail.com">
+          cristiansantiagoperezcruz@gmail.com
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> — Mi Librería & Biblioteca</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
